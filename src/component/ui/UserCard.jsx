@@ -15,7 +15,7 @@ import { Link } from 'react-router';
 //   }
 const UserCard = ({user}) => {
     return (
-       <Link className="card bg-base-100 w-auto shadow-sm items-center space-y-2 ">
+       <Link to={`/userDetails/${user.id}`} className="card bg-base-100 w-auto shadow-sm items-center space-y-2 ">
   <figure>
     <img
       src={user.picture}
@@ -30,7 +30,7 @@ const UserCard = ({user}) => {
       }
       </div>
     
-      <span className={`my-2 font-semibold rounded-full py-1 px-2 ${user.status==='overdue'?"bg-amber-400 text-white":user.status==='due soon'?"bg-purple-500 text-white":user.status==="on track"?"bg-green-500 text-white":""}`}>{user.status}</span>
+      <span className={`my-2 font-semibold rounded-full py-1 px-2 ${user.status==='overdue'?"bg-amber-400 text-white":user.status==='almost due'?"bg-red-700 text-white":user.status==="on track"?"bg-green-800 text-white":""}`}>{user.status}</span>
    
  
 </Link>
