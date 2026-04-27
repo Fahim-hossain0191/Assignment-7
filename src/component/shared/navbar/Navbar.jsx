@@ -19,7 +19,7 @@ const Navbar = () => {
               to="/"
               className={({ isActive }) =>
                 isActive
-                  && "bg-[#244D3F] text-white rounded-lg"
+                  ? "bg-[#244D3F] text-white rounded-lg":""
                   
               }
             >
@@ -30,14 +30,14 @@ const Navbar = () => {
           <li>
            
             <NavLink to='/timeline' className={({isActive})=>
-            isActive&&"bg-[#244D3F] text-white rounded-lg"
+            isActive?"bg-[#244D3F] text-white rounded-lg":""
             }>
                  <RiTimeLine />  Timeline
             </NavLink>
           </li>
           <li >
               <NavLink to='/stats' className={({isActive})=>
-            isActive&&"bg-[#244D3F] text-white rounded-lg"
+            isActive?"bg-[#244D3F] text-white rounded-lg":""
             }>
                 <IoStatsChartSharp /> Stats
             </NavLink>

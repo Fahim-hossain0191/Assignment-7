@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "john.doe@example.com",
+    "days_since_contact": 12,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met in university. Love hiking together.",
+    "goal": 14,
+    "next_due_date": "2026-05-01"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Ahmed",
+    "picture": "https://randomuser.me/api/portraits/women/45.jpg",
+    "email": "sarah.ahmed@example.com",
+    "days_since_contact": 5,
+    "status": "on track",
+    "tags": ["work", "teammate"],
+    "bio": "Worked together on multiple software projects.",
+    "goal": 10,
+    "next_due_date": "2026-05-02"
+  },
+  {
+    "id": 3,
+    "name": "Michael Lee",
+    "picture": "https://randomuser.me/api/portraits/men/51.jpg",
+    "email": "michael.lee@example.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["gym", "travel buddy"],
+    "bio": "Met at the gym. We often plan weekend trips.",
+    "goal": 14,
+    "next_due_date": "2026-04-25"
+  },
+  {
+    "id": 4,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/22.jpg",
+    "email": "nusrat.jahan@example.com",
+    "days_since_contact": 3,
+    "status": "on track",
+    "tags": ["school", "best friend"],
+    "bio": "Known each other since high school. Always supportive.",
+    "goal": 7,
+    "next_due_date": "2026-05-01"
+  },
+  {
+    "id": 5,
+    "name": "David Miller",
+    "picture": "https://randomuser.me/api/portraits/men/67.jpg",
+    "email": "david.miller@example.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["neighbor", "football"],
+    "bio": "Old neighbor and football match partner.",
+    "goal": 15,
+    "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 6,
+    "name": "Emily Carter",
+    "picture": "https://randomuser.me/api/portraits/women/30.jpg",
+    "email": "emily.carter@example.com",
+    "days_since_contact": 8,
+    "status": "due soon",
+    "tags": ["book club", "creative"],
+    "bio": "Met at a local book club. Loves writing poetry.",
+    "goal": 10,
+    "next_due_date": "2026-04-29"
+  },
+  {
+    "id": 7,
+    "name": "Hasib Rahman",
+    "picture": "https://randomuser.me/api/portraits/men/12.jpg",
+    "email": "hasib.rahman@example.com",
+    "days_since_contact": 2,
+    "status": "on track",
+    "tags": ["cousin", "gaming"],
+    "bio": "My cousin and online gaming partner.",
+    "goal": 7,
+    "next_due_date": "2026-05-03"
+  },
+  {
+    "id": 8,
+    "name": "Olivia Brown",
+    "picture": "https://randomuser.me/api/portraits/women/60.jpg",
+    "email": "olivia.brown@example.com",
+    "days_since_contact": 15,
+    "status": "due soon",
+    "tags": ["mentor", "career"],
+    "bio": "Former manager who gives career advice.",
+    "goal": 20,
+    "next_due_date": "2026-04-30"
+  }
+]
