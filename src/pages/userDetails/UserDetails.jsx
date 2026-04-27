@@ -1,4 +1,4 @@
-import React, { use } from 'react';
+import React, { use, useContext } from 'react';
 import {useParams } from 'react-router';
 import { FiPhoneCall } from "react-icons/fi";
 import { LuMessageSquareText } from "react-icons/lu";
@@ -6,6 +6,7 @@ import { MdOutlineVideocam } from "react-icons/md";
 import { RiNotificationSnoozeLine } from "react-icons/ri";
 import { LuArchive } from "react-icons/lu";
 import { RiDeleteBinLine } from "react-icons/ri";
+import { UserContext } from '../../context/UserContext';
 
 const userPromise=fetch('/usersData.json').then((res)=>res.json())
 
@@ -27,6 +28,9 @@ const UserDetails = () => {
     // "goal": 14,
     // "next_due_date": "2026-05-01"
     const {picture,name,status,tags,bio,days_since_contact,goal,email,next_due_date}=expectedUser;
+
+  const {handleCalls,handleText,handleVideo}=useContext(UserContext);
+
     return (
       <div className="bg-gray-200  p-10">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -72,7 +76,7 @@ const UserDetails = () => {
             <p className="text-sm text-gray-400 mt-2">{email}</p>
           </div>
 
-          {/* Buttons */}
+      
           <button className="btn w-full bg-white border-0 shadow">
           <RiNotificationSnoozeLine  className='text-xl'/>  Snooze 2 Weeks
           </button>
@@ -124,23 +128,27 @@ const UserDetails = () => {
             <button className="btn btn-sm">Edit</button>
           </div>
 
-          {/* Quick Check In */}
+       
           <div className="bg-white rounded-xl shadow p-6">
             <h2 className="text-xl font-semibold mb-5">Quick Check-In</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <button className="btn h-24 bg-gray-100 border-0 flex-col">
-                <FiPhoneCall  className='text-3xl'/>
+                <FiPhoneCall  className='text-3xl' onClick={()=>handleCalls(expectedUser)}/>
                 Call
               </button>
 
               <button className="btn h-24 bg-gray-100 border-0 flex-col">
-                <LuMessageSquareText className='text-3xl'/>
+                <LuMessageSquareText className='text-3xl'
+                onClick={()=>handleText(expectedUser)}
+                />
                 Text
               </button>
 
               <button className="btn h-24 bg-gray-100 border-0 flex-col">
-                <MdOutlineVideocam className='text-4xl'/>
+                <MdOutlineVideocam className='text-4xl'
+                onClick={()=>handleVideo(expectedUser)}
+                />
                 Video
               </button>
             </div>
