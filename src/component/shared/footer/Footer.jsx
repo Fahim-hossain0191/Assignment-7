@@ -5,11 +5,11 @@ import Img3 from "../../../assets/twitter.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#244D3F] text-white mt-20 py-16 px-6">
+    <footer className="bg-[#244D3F] text-white mt-20 py-6 px-6">
       <div className="max-w-6xl mx-auto">
 
        
-        <div className="text-center space-y-5">
+        <div className="text-center space-y-3">
           <h2 className="text-6xl font-bold">KeenKeeper</h2>
 
           <p className="text-gray-200 max-w-3xl mx-auto text-sm md:text-base">

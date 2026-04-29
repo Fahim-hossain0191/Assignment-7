@@ -3,7 +3,7 @@ import UserCard from '../../component/ui/UserCard';
 
 const userPromise=fetch('/usersData.json').then((res)=>res.json());
 const AllUsers = () => {
-    console.log("hudai")
+   
     const users=use(userPromise);
     console.log(users);
     return (
