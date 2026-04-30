@@ -4,4 +4,4 @@ Q2.Ans: In this project I have implemented a friend list page and click to a fri
 
 Q3. Ans: Reactjs, tailwind,daisy ui, react chart,React Router
 
-Q4.Ans : show Details, timeline page, stats page
+Q4.Ans : show Details, timeline page, stats page,filtering timeline
